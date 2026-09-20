@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  
+  --color-navy-dark: #0B132B;
+  --color-navy-main: #0F1D30;
+  --color-navy-card: #14223D;
+  --color-navy-hover: #1A2B4C;
+  
+  --color-ivory-bg: #F5F3ED;
+  --color-ivory-card: #FFFFFF;
+  --color-ivory-subtle: #EFECE4;
+  --color-ivory-dark: #E4DFD3;
+  
+  --color-gold-accent: #C5A059;
+  --color-gold-light: #E6CA85;
+  --color-gold-dark: #9A7B39;
+  --color-gold-subtle: rgba(197, 160, 89, 0.2);
+  
+  --color-charcoal-dark: #1E293B;
+  --color-charcoal-muted: #475569;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0B132B;
+  color: #1E293B;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gold Text Gradient Shimmer */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C5A059 0%, #F3E5C8 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C5A059 0%, #D4AF37 50%, #9A7B39 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Glassmorphism helpers */
+.glass-nav-transparent {
+  background: transparent;
+  backdrop-filter: blur(0px);
+  border-bottom: 1px solid transparent;
+}
+
+.glass-nav-scrolled {
+  background: rgba(11, 19, 43, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.chique-card-shadow {
+  box-shadow: 0 10px 40px -10px rgba(15, 29, 48, 0.08);
+}
