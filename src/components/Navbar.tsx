@@ -63,8 +63,13 @@ export const Navbar: React.FC = () => {
             onClick={(e) => handleNavClick(e, '#hero')}
             className="group flex items-center gap-3 text-white font-semibold tracking-wider text-sm md:text-base"
           >
-            <span className="w-2.5 h-2.5 bg-[#C5A059] rounded-full transition-transform duration-300 group-hover:scale-125" />
-            <span className="font-bold tracking-widest text-white uppercase drop-shadow-sm">ABRAHAM ESPEJO</span>
+            <div className="flex items-center justify-center w-10 h-10 border border-[#C5A059]/50 text-[#C5A059] rounded bg-gradient-to-br from-[#C5A059]/10 to-transparent group-hover:border-[#C5A059] transition-all duration-300 shadow-[0_0_15px_rgba(197,160,89,0.1)]">
+              <span className="font-serif text-xl leading-none tracking-tighter ml-0.5">AE</span>
+            </div>
+            <div className="flex flex-col justify-center">
+              <span className="font-bold tracking-widest text-white uppercase drop-shadow-sm leading-tight text-sm">ABRAHAM ESPEJO</span>
+              <span className="text-[9px] text-[#C5A059] tracking-[0.25em] uppercase leading-tight mt-0.5 opacity-90">Partners</span>
+            </div>
           </a>
 
           {/* Desktop Navigation Links */}
